@@ -18,7 +18,7 @@
 $(document).ready(function get_json(){
    $.getJSON({
        type: 'GET',
-       url: 'http://localhost:3000/cars/index',
+       url: 'http://localhost:3000/cars/json',
        dataType: 'json',
        success: function(data) {
            var items = []
