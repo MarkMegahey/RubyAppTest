@@ -4,6 +4,9 @@ class CarsController < ApplicationController
     render json: @cars
   end
 
+  def show
+  end
+
   def new
   end
 

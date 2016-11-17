@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'cars#index'
+  root 'cars#show'
+
+  get 'cars/index'
 
   get 'cars/new'
 
