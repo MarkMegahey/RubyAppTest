@@ -14,23 +14,29 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
 $(document).ready(function get_json(){
    $.getJSON({
        type: 'GET',
        url: 'http://localhost:3000/cars/index',
        dataType: 'json',
        success: function(data) {
-           var items = [],
-                      $ul;
+           var items = []
            $.each(data, function(key, val) {
             console.log(val);
             items.push(
-                  '<li id="' + key + '"><span class="name">' + val.name + '</span><br><span class="manufacturer">' + val.manufacturer + '</span><br><span class="colour">' + val.colour + '</span></li><br>');
+                  '<tr><td>' + val.name + '</td><td>' +  val.manufacturer + '</td><td>' + val.colour + '</td></tr>');
            });
-           $ul = $('<ul />').appendTo('#feed');
-
-           //append list items to list
-           $ul.append(items);
+           $(document).ready( function () {
+             $('#table_id').DataTable({
+               data: data,
+               columns: [
+                 { data: 'name' },
+                 { data: 'manufacturer' },
+                 { data: 'colour' }
+               ]
+             });
+           });
         }
    });
    return false;
