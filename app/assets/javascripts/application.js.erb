@@ -28,12 +28,27 @@ $(document).ready(function get_json(){
                   '<tr><td>' + val.name + '</td><td>' +  val.manufacturer + '</td><td>' + val.colour + '</td></tr>');
            });
            $(document).ready( function () {
+             var editor = new $.fn.dataTable.Editor( {} );
+             new $.fn.dataTable.Editor( {
+                 table: '#table_id',
+                 fields: [
+                     { label: 'name', name: 'name' },
+                     { label: 'manufacturer',  name: 'manufacturer'  },
+                     { label: 'colour',  name: 'colour'  }
+                 ]
+             });
              $('#table_id').DataTable({
                data: data,
                columns: [
                  { data: 'name' },
                  { data: 'manufacturer' },
                  { data: 'colour' }
+               ],
+               select: true,
+               buttons: [
+                 { extend: 'create', editor: editor },
+                 { extend: 'edit',   editor: editor },
+                 { extend: 'remove', editor: editor }
                ]
              });
            });
