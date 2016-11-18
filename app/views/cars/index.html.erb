@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!--
+ __  __            _                                 _                  ___   ___  __   __
+|  \/  |          | |                               | |                |__ \ / _ \/_ | / /
+| \  / | __ _ _ __| | __  _ __ ___   ___  __ _  __ _| |__   ___ _   _     ) | | | || |/ /_
+| |\/| |/ _` | '__| |/ / | '_ ` _ \ / _ \/ _` |/ _` | '_ \ / _ \ | | |   / /| | | || | '_ \
+| |  | | (_| | |  |   <  | | | | | |  __/ (_| | (_| | | | |  __/ |_| |  / /_| |_| || | (_) |
+|_|  |_|\__,_|_|  |_|\_\ |_| |_| |_|\___|\__, |\__,_|_| |_|\___|\__, | |____|\___/ |_|\___/
+                                         __/ |                  __/ |
+                                        |___/                  |___/
+
+-->
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,21 +23,23 @@
         <h4 class="modal-title">Products</h4>
       </div>
       <div class="modal-body">
-      <p>
-        <div class="btn-group">
-          <%= link_to 'Add Product', new_car_path, class: 'btn btn-success'%>
-        </div>
-      </p>
-      <table id="table_id" class="display">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Manufacturer</th>
-                <th>Colour</th>
-                
-            </tr>
-        </thead>
-      </table>
+        <p>
+          <div class="btn-group">
+            <%= link_to 'Add Product', new_car_path, class: 'btn btn-success'%>
+          </div>
+        </p>
+        <table id="table_id" class="display">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Manufacturer</th>
+                  <th>Colour</th>
+
+              </tr>
+          </thead>
+        </table>
+      </div>
     </div>
+    <b><h5 style="text-align:center;">Copyright &copy Mark Megahey 2016</h5><b>
   </body>
 </html>
