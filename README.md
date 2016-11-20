@@ -6,8 +6,11 @@ How to use
 
 <h3>Installation</h3>
 
-Simply clone down this file and run ```rails db:drop db:create db:migrate db:seed```  in the terminal command line,
-this will run the database migrations and produce the seed data.
+YOu need to make sure you have ruby 2.3.0 and have installed the gem "Bundler". I would recommend (RBENV)[https://github.com/rbenv/rbenv] for managing ruby and you can find (Bundler here)[http://bundler.io/].
+
+Assuming this is done you can simply clone down this repo and run ``` bundle```.
+
+Once you have installed the rails dependancies you can get the project set up with ```rails db:drop db:create db:migrate db:seed```  in the terminal command line, this will run the database migrations and produce the seed data.
 
 Next run ```rails s``` in the command line to start the rails server.
 
