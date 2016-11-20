@@ -34,6 +34,7 @@ JavaScript is one of the most common programming language's used with HTML to de
 
 I used Javascript to create an ajax request pulling the the data from the api end point and serving it up to the datatable.
 
+Javascript can be found in app/assets/javascripts/application.js
 
 <b>Data Tables</b>
 Datatables is a pluggin designed expescially for formating data into a readable table format with pagination, filtering and search options 
