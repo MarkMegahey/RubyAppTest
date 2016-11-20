@@ -6,7 +6,7 @@ How to use
 
 <h3>Installation</h3>
 
-You need to make sure you have ruby 2.3.0 and have installed the gem "Bundler". I would recommend (RBENV)[https://github.com/rbenv/rbenv] for managing ruby and you can find (Bundler here)[http://bundler.io/].
+You need to make sure you have ruby 2.3.0 and have installed the gem "Bundler". I would recommend [RBENV](https://github.com/rbenv/rbenv) for managing ruby and you can find [Bundler here](http://bundler.io/).
 
 Assuming this is done you can simply clone down this repo and run ``` bundle```.
 
